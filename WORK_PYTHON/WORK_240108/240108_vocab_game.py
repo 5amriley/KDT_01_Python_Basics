@@ -10,9 +10,9 @@
 
 import random
 
-# 단어 저장할 전역변수 선언 (초기값 : 단어 22개)
+# 단어 저장할 전역변수 선언 (초기값 : 단어 24개)
 words_dict = {'bump':'(~에 신체 부위를) 찧다, 부딪치다', 'conviction':'유죄선고',
-              'oversee':'감독하다', 'exercise':'(권리 등을) 행사하다, 발휘하다',
+              'algorithm':'알고리즘', 'exercise':'(권리 등을) 행사하다, 발휘하다',
               'cram':'벼락치기 공부를 하다', 'reciprocal':'상호간의',
               'delegate':'대표자', 'lucrative':'수익성이 좋은',
               'sidewalk':'보도, 인도', 'permanent':'영구적인, 영원한',
@@ -20,7 +20,8 @@ words_dict = {'bump':'(~에 신체 부위를) 찧다, 부딪치다', 'conviction
               'legitimate':'정당한, 타당한', 'conscience':'양심',
               'tuition':'(특히 대학의)등록금', 'parenthesis':'소괄호()기호',
               'reimburse':'배상하다', 'remedy':'바로잡다, 교정하다',
-              'novice':'초보자', 'mayonnaise':'마요네즈',
+              'novice':'초보자', 'mischievous':'짖궂은, 말썽꾸러기의',
+              'rehearsal':'리허설', 'mayonnaise':'마요네즈',
               'canoe':'카누', 'etiquette':'에티켓'
               }
 
@@ -130,13 +131,16 @@ def word_del():
     global words_dict
 
     while True:
-        target = input('삭제하고 싶은 단어를 입력하세요 (초기화: \'초기화\' 입력): ')
+        target = input('삭제하고 싶은 단어를 입력하세요 (초기화: \'초기화\' 입력, 입력중지: -1): ')
         if target == '초기화':
             words_dict = dict()
             print('초기화 성공!')
             break
+        elif target == '-1':
+            break
         elif target in words_dict.keys():
             del words_dict[target]
+            print('삭제되었습니다.')
         else:
             print('해당하는 단어가 없습니다. 다시 입력하세요.')
 
@@ -155,6 +159,7 @@ while True:
         print()
     if choice == '2':
         # 단어 출력 함수 구현
+        # 미구현 : 20개 단위로 페이지 형식으로 보여주기 (더보기 : 21~40번째 단어 출력, [...반복])
         print()
         word_display()
         print()
