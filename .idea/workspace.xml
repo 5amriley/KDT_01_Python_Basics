@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218ee4bb-6874-42ff-ba1c-472237b67f9b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="218ee4bb-6874-42ff-ba1c-472237b67f9b" name="Changes" comment="단어 삭제 메뉴 탈출조건 구현">
       <change beforePath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KDT_01_Python_Basics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KDT_01_Python_Basics/WORK_PYTHON/WORK_240108/240108_vocab_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/../KDT_01_Python_Basics/WORK_PYTHON/WORK_240108/240108_vocab_game.py" afterDir="false" />
     </list>
@@ -156,6 +153,19 @@
       <option name="presentableId" value="Default" />
       <updated>1704767447374</updated>
     </task>
+    <task id="LOCAL-00001" summary="단어 삭제 메뉴 탈출조건 구현">
+      <option name="closed" value="true" />
+      <created>1704773772808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704773772808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="단어 삭제 메뉴 탈출조건 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="단어 삭제 메뉴 탈출조건 구현" />
   </component>
 </project>

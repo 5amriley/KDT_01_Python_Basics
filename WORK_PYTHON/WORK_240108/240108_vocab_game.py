@@ -60,7 +60,7 @@ def word_game():
                 if answer == '-1':
                     give_up = True
                 elif answer == '0':
-                    print(f'답은 {v} 입니다. 아쉽네요 ㅠㅠ')
+                    print(f'답은 [ {v} ] 입니다. 아쉽네요 ㅠㅠ')
                     break
                 elif answer == '1':
                     print(f'hint : \'{v[0]}\'(으)로 시작하고, 길이는 {len(v)} 예요!')
@@ -72,7 +72,10 @@ def word_game():
                     print('오답입니다;')
         print()
         if not give_up:
-            print(f'[점수] : {cnt} / {qnum} ', end='[훌륭해요! ^0^]\n' if cnt / qnum > 0.7 else '[복습할꺼죠? 화이팅!]\n')
+            print('='*54)
+            comment = f'[점수] : {cnt} / {qnum} ' + ('[훌륭해요! ^0^]' if cnt / qnum > 0.7 else '[복습할꺼죠? 화이팅!]')
+            print(f'{comment:^50}')
+            print('='*54)
         print('문제 풀이를 종료합니다.')
 
 def word_display():
@@ -144,6 +147,8 @@ def word_del():
         else:
             print('해당하는 단어가 없습니다. 다시 입력하세요.')
 
+word_funcs = [word_game, word_display, word_add, word_edit, word_del]
+
 while True:
     print("[ 주영's 영단어 학습앱 (효과 탁월) ]")
     print("1. 문제 풀기 2. 단어 출력 3. 단어 추가")
@@ -153,29 +158,12 @@ while True:
     if not choice.isdecimal():
         print("잘못된 입력입니다. 다시 입력하세요.\n")
         continue
-    if choice == '1':
-        # 문제 풀기 함수 구현
-        word_game()
+    elif choice == '6':
         print()
-    if choice == '2':
-        # 단어 출력 함수 구현
-        # 미구현 : 20개 단위로 페이지 형식으로 보여주기 (더보기 : 21~40번째 단어 출력, [...반복])
-        print()
-        word_display()
-        print()
-    if choice == '3':
-        # 단어 추가 함수
-        word_add()
-        print()
-    if choice == '4':
-        # 단어 뜻 수정 함수 구현
-        word_edit()
-        print('')
-    if choice == '5':
-        # 단어 삭제 함수 구현 (하나씩? 초기화?)
-        print()
-        word_del()
-        print()
-    if choice == '6':
         print('프로그램을 종료합니다.')
         break
+    else:
+        choice_func = word_funcs[int(choice)-1]
+        print()
+        choice_func()
+        print()
