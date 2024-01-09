@@ -6,6 +6,7 @@
 # 4. 단어 뜻 수정
 # 5. 단어 삭제
 # 6. 프로그램 종료
+# [구현 예정] 단어장 생성, 맞춘/틀린 횟수 파일로 저장, 관리
 # -------------------------------------------------------------
 
 import random
@@ -80,12 +81,13 @@ def word_game():
 
 def word_display():
     """ 단어 출력 함수 """
+    # 맞춘 횟수, 틀린 횟수 저장해서 정렬 출력 -> 파일 입출력으로 구현 예정
     if len(words_dict) == 0:
         print('입력된 단어가 없습니다. 단어를 입력해주세요')
     else:
         print('='*70)
         for key, value in words_dict.items():
-            print(f'{key:<35} {value:<35}')
+            print(f'{key:<30} {value:<40}')
         print('='*70)
 
 def word_add():
@@ -93,12 +95,10 @@ def word_add():
     단어 추가 함수\n
     """
     word = None
-    cancel = 0  # 중간에 취소했는지 여부
     while True:
         word = input('추가할 단어의 스펠링을 입력해주세요 (입력중지: -1) : ')
 
         if word == '-1':
-            cancel = 1
             break
 
         if word in words_dict:
@@ -108,7 +108,6 @@ def word_add():
             meaning = input('단어의 뜻을 입력해주세요 : ')
             words_dict[word] = meaning
             print('입력 완료')
-    return cancel
 
 def word_edit():
     """
