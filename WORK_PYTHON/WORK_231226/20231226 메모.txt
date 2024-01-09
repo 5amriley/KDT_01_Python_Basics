@@ -1,0 +1,59 @@
+2023/12/26 메모
+
+https://drive.google.com/drive/folders/1vESZcmHvsbk7fABOj61XbmtJZ9dK7PRc
+
+[출결]
+8:50 ~ 9:10 / 17:50 ~ 
+휴가, 훈련, 지각 -> 다 처리할 수 있음
+
+[WiFi]
+knu-smart(AP)
+ID : DataEdu-숫자(1~20)
+PW : DATAEDU-숫자(1~20)
+
+[자격증]
+빅데이터분석기사
+SQL-d
+정보처리기사
+
+채용 사이트 - https://www.theimc.co.kr/web/php/sub/apply.php?ca_idx=45
+
+계속 좋은 방법을 찾아봐야 한다. (논문, 언어, 기술, ...)
+
+파이썬 버전에 따라 ~ 호환 가능, 불가능
+
+아나콘다 다운로드
+
+python.org - 파이썬 공식 홈페이지
+docs : documentation
+(EOL) 뜻 : 소프트웨어 지원이 끝남
+Library Reference : 파이썬 라이브러리 현황
+
+지금 파이썬은 3.11, 3.12 가 stable 이다. 아나콘다는 3.11 버전을 사용하는 중이다.
+Install for : All users
+Clear the package cache upon completion : 이전 정보/캐시 삭제
+
+파이썬 개발 프로그램
+REPL (Read Eval Print Loop) : 콘솔 화면에서 입력 & 결과 확인
+IDE (Integrated Development Environment) : 통합개발환경
+Text Editor : 텍스트 편집 기능
+
+파이참 : 파이썬 전용
+vs code : C, Java, Python 다 됨 (설정 복잡)
+
+아나콘다 : 파이썬의 수많은 라이브러리(=패키지)를 관리해준다. 
+(적합한 파이썬 버전에 맞는, 의존성 관계에 있는 패키지들을 편리하게 설치)
+(의존성 - 라이브러리 A를 문제없이 사용하기위해 추가로 설치해야 하는, 딸려 오는 라이브러리들)
+또한 Environments 에서 가상환경을 추가로 생성할 수 있다. (여러 버전 양립)
+
+도커 ~ 팀 프로젝트 (개발환경 관리)
+
+파이참 Community Edition : 무료
+파이참 Professional : 유료 (30일 무료)
+Installation Options 모두 체크 (Create Desktop Shortcut, ...)
+
+New Project - name 설정
+Interpreter type : Project venv (파이참 가상환경), Base conda (아나콘다 것), Custom environment (사용자 설정)
+인터프리터 : 문법 검사, 해석, 실행
+
+내가 어떤 패키지를 쓰냐에 따라 파이썬 버전이 따라간다.
